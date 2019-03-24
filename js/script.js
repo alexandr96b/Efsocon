@@ -16,6 +16,11 @@ $(document).on('click', function(e) {
 
 
 
+ $("#b-lang").msDropdown({roundedBorder:false});
+
+
+ 
+//
  
 // google maps
 
