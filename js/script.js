@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
-$('.menu-icon').click(function(){
-  $('.b-nav').toggleClass('active');
+$('.menu-ico').click(function(){
+  $('.b-aside').toggleClass('active');
   $(this).toggleClass('active');
 });
 
 
 $(document).on('click', function(e) {
-  if (!$(e.target).closest(".menu-icon , .b-nav").length) {
-    $('.b-nav').removeClass('active');
-    $('.menu-icon').removeClass('active');
+  if (!$(e.target).closest(".menu-ico , .b-aside").length) {
+    $('.b-aside').removeClass('active');
+    $('.menu-ico').removeClass('active');
   }
   e.stopPropagation();
 });
