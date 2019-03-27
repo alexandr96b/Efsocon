@@ -318,6 +318,18 @@
 	.b-finance-item .dd{
 		width: 266px !important;
 	}
+	.b-news-item{
+		display: block;
+	}
+	.b-news-item__img{
+		margin: 0 0 15px 0;
+	}
+	.b-news-item__img img{
+		margin: 0 auto 0;
+	}
+	.b-news-item__content{
+		text-align: center;
+	}
 }
 @media (max-width: 580px) {
 	.b-main-table table{

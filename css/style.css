@@ -1445,3 +1445,52 @@ select{
 .b-finance-history__right .b-checkbox:last-child{
 	margin: 0;
 }
+
+/* -------------- page news -------------- */
+.b-news{
+
+}
+.b-news-item{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 17px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.b-news-item:nth-child(even){
+	background: #f3fcfc;
+}
+.b-news-item__img{
+	flex-shrink: 0;
+	margin: 0 20px 0 0;
+}
+.b-news-item__content{
+
+}
+.b-news-item__content span{
+	display: block;
+	color: #13c6ea;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;	
+}
+.b-news-item__content b{
+	display: block;
+	color: #353535;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	margin: 4px 0;
+}
+.b-news-item__content p{
+	margin: 0;
+	color: #353638;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;	
+}
+
+
+/* -------------- page career -------------- */
