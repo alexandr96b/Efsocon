@@ -93,6 +93,9 @@
 }
 
 @media (max-width: 767px) {
+	.b-container{
+		cursor: pointer;	
+	}	
 	.wrapper-content{
 		display: block;
 	}	
@@ -187,7 +190,8 @@
 	}
 	.b-main-block{
 		width: 100%;
-		background-position: left top;
+		background-position: center top;
+		background: #ffffff;
 		justify-content: center;
 	}
 	.b-main-top__left{
@@ -199,7 +203,7 @@
 	}
 	.b-main-col{
 		width: 115px;
-		margin: 0 auto 10px;
+		margin: 0 auto 10px !important;
 	}
 	.b-main__income{
 		width: 100%;
@@ -234,9 +238,50 @@
 		width: 570px;
 	}
 }
-@media (max-width: 620px) {
-
-}
+@media (max-width: 645px) {
+	.b-faq{
+		display: block;
+	}
+	.b-faq-left{
+		border: none;
+	}
+	.b-faq ul{
+		display: flex;
+		justify-content: space-between;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.b-faq ul li{
+		width: 50%;
+	}
+	.b-faq ul li a{
+		padding: 13px 3px;
+	}
+	.b-faq-ico{
+		flex-shrink: 0;
+		width: 15px;
+		margin: 0 10px 0 0;
+	}
+	.b-faq ul li a{
+		border-bottom: 1px solid transparent;
+		justify-content: center;
+	}
+	.b-faq ul li a.active{
+		border-bottom: 1px solid #2953c0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.b-faq ul li a.active:after{
+		display: none;
+	}
+	.b-faq ul li a b{
+		text-transform: capitalize;
+	}
+	.b-faq-right{
+		padding: 10px;
+	}
+}	
 
 @media (max-width: 475px){
 
