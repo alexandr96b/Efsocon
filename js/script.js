@@ -16,8 +16,9 @@ $(document).on('click', function(e) {
 
 
 
- $("#b-lang").msDropdown({roundedBorder:false});
+ $(".b-lang").msDropdown({roundedBorder:false});
 
+ $(".select_val").msDropdown({roundedBorder:false});
 
 
 /*function moveMenu(){

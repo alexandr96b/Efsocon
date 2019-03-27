@@ -298,17 +298,279 @@ modal-login
 					<div class="b-col">
 						<span class="b-block-title">
 							Финансы
-						</span>						
+						</span>					
+						<div class="b-main-nav">
+							<ul class="nav">
+								<li><a class="active" data-toggle="tab" href="#t1">Пополнение</a></li>
+								<li><a data-toggle="tab" href="#t2">Вывод</a></li>
+								<li><a data-toggle="tab" href="#t3">Обмен</a></li>
+								<li><a data-toggle="tab" href="#t4">Перевод</a></li>
+								<li><a data-toggle="tab" href="#t5">История</a></li>
+							</ul>
+						</div>							
 						<div class="b-wrapper">
 							<div class="b-finance">
-								<div class="b-main-nav">
-									<ul>
-										<li><a data-toggle="tab" href="#t1">Пополнение</a></li>
-										<li><a data-toggle="tab" href="#t2">Вывод</a></li>
-										<li><a data-toggle="tab" href="#t3">Обмен</a></li>
-										<li><a data-toggle="tab" href="#t4">Перевод</a></li>
-										<li><a data-toggle="tab" href="#t5">История</a></li>
-									</ul>
+								<div class="tab-content">
+									<div class="finance-pl tab-pane active" id="t1">
+										<div class="b-finance-row">
+											<div class="b-finance-left">
+												<span class="b-title">Пополение кошелька</span>
+												<div class="b-finance-top">
+													<p>Данная функция позволит Вам пополнить свои Кошельки. <br/>
+													Внимание! Пополнение кошельков осуществляются без комиссии!</p>
+												</div>
+												<div class="b-finance-item">
+													<span class="b-finance-item__title">Сумма</span>
+													<input class="b-finance-input__big" type="text" placeholder="">
+												</div>											
+												<div class="b-finance-item">
+													<span class="b-finance-item__title">Способ оплаты</span>
+													<select class="select_val">
+														<option value="ru" data-image="images/tipper.png">Tipper</option>
+														<option value="english" data-image="images/tipper.png">Tipper</option>
+													</select>										
+												</div>										
+									            <div class="b-checkbox">
+									              <input type="checkbox" checked id="h1" name="n4" />
+									              <label for="h1"><span></span><i>Cоглашаюсь с правилами оферт</i></label>  
+									            </div>		
+									            <button class="btn-send">Пополнить кошелек</button>
+											</div>
+											<div class="b-finance-tooltip">
+												<p>Я подтверждаю , что правильно скопировал реквизиты кошелька для отправки средств. Я соглашаюсь с тем, что ответственность за внесение правильных реквизитов для пополнения средств в сервисе лежит на мне. Я ознакомлен , что сервис не несет ответственность за списание средств с моих мест хранения при внесении мной неправильных реквизитов.</p>
+											</div>
+										</div>
+									</div>
+									<div class="finance-vuvod tab-pane" id="t2">
+										<span class="b-title">Вывод средств</span>
+										<div class="b-finance-top">
+											<p>Внимательно проверяйте номера кошельков! Если у Вас появилась необходимость для их изменения, обратитесь в поддержку support@efsocon.com<br/>
+											Вам будут предоставлены инструкции</p>
+										</div>
+										<div class="b-finance-row">
+											<div class="b-finance-item">
+												<span class="b-finance-item__title">Выберите валюту вывода</span>
+												<select class="select_val">
+													<option value="ru" data-image="images/tipper.png">Tipper</option>
+													<option value="english" data-image="images/tipper.png">Tipper</option>
+												</select>										
+											</div>									
+										</div>
+										<div class="b-finance-bottom">
+											<div class="b-finance-item">
+												<span class="b-finance-item__title">Ваш E-mail</span>
+												<input class="b-finance-input__big" type="text" placeholder="">
+											</div>
+											<p>Срок обработки заявки: до 72 часов.</p>
+										</div>
+										<div class="b-finance-row b-finance-row__last">
+											<div class="b-finance-item">
+												<span class="b-finance-item__title">Ваш E-mail</span>
+												<input class="b-finance-input" type="text" placeholder="">
+											</div>										
+											<div class="b-finance-item">
+												<span class="b-finance-item__title">Номер кошелька</span>
+												<input class="b-finance-input" type="text" placeholder="">
+											</div>
+										</div>
+							            <div class="b-checkbox">
+							              <input type="checkbox" checked id="f1" name="n4" />
+							              <label for="f1"><span></span><i>Cоглашаюсь с правилами оферт</i></label>  
+							            </div>		
+							            <button class="btn-send">Вывести средства</button>
+									</div>									
+									<div class="finance-obmen tab-pane" id="t3">
+										<span class="b-title">Обмен</span>
+										<div class="b-finance-top">
+											<p>Внимание!<br/>
+											Данная функция позволит Вам конвертировать средства между кошельками<br/>
+											Обратите внимание, что данная операция осуществляется с комиссией. В зависимости от группы параметров, комиссия может составлять от 0,3% до 5,0%.<br/>
+											Минимальная сумма обмена не менее 10,00 USD в эквиваленте выбранной валюты</p>
+											<span>Сегодня доступно обменов: 4. Обменов в текущей неделе осталось: 20</span>
+										</div>
+										<div class="b-finance-row">
+											<div class="b-finance-row__col">
+												<div class="b-finance-item">
+													<span class="b-finance-item__title">Выберите валюту которую хотите обменять</span>
+													<select class="select_val">
+														<option value="ru" data-image="images/tipper.png">Tipper</option>
+														<option value="english" data-image="images/tipper.png">Tipper</option>
+													</select>										
+												</div>
+												<div class="b-finance-item">
+													<span class="b-finance-item__title">Сумма</span>
+													<input class="b-finance-input__big" type="text" placeholder="">
+												</div>												
+											</div>
+											<div class="arrow"></div>
+											<div class="b-finance-row__col">
+												<div class="b-finance-item">
+													<span class="b-finance-item__title">Выберите валюту которую хотите обменять</span>
+													<select class="select_val">
+														<option value="ru" data-image="images/tipper.png">Tipper</option>
+														<option value="english" data-image="images/tipper.png">Tipper</option>
+													</select>										
+												</div>
+												<div class="b-finance-item">
+													<span class="b-finance-item__title">Сумма</span>
+													<input class="b-finance-input__big" type="text" placeholder="">
+												</div>												
+											</div>																		
+										</div>
+										<div class="b-finance-bottom"></div>
+							            <div class="b-checkbox">
+							              <input type="checkbox" checked id="q1" name="n4" />
+							              <label for="q1"><span></span><i>Cоглашаюсь с правилами оферт</i></label>  
+							            </div>		
+							            <button class="btn-send">Обменять валюту</button>
+									</div>									
+									<div class="tab-pane" id="t4">
+										<span class="b-title">Перевод средств между аккаунтами</span>
+										<div class="b-finance-top">
+											<p>Внимание!<br/>
+											Обратите внимание, что данная операция осуществляется с комиссией. В зависимости от группы параметров, комиссия может составлять от 0,3% до 5,0%.<br/>
+											Для перевода укажите login получателя!</p>
+										</div>
+										<div class="b-finance-row">
+											<div class="b-finance-item">
+												<span class="b-finance-item__title">Выберите валюту которую хотите обменять</span>
+												<select class="select_val">
+													<option value="ru" data-image="images/tipper.png">Tipper</option>
+													<option value="english" data-image="images/tipper.png">Tipper</option>
+												</select>										
+											</div>
+											<div class="arrow"></div>
+											<div class="b-finance-item">
+												<span class="b-finance-item__title">Login получателя</span>
+												<input class="b-finance-input" type="text" placeholder="">
+											</div>									
+										</div>
+										<div class="b-finance-bottom">
+											<input class="b-finance-input__big" type="text" placeholder="">
+										</div>
+							            <div class="b-checkbox">
+							              <input type="checkbox" checked id="b1" name="n4" />
+							              <label for="b1"><span></span><i>Cоглашаюсь с правилами оферт</i></label>  
+							            </div>		
+							            <button class="btn-send">Перевести средства</button>
+									</div>
+									<div class="tab-pane" id="t5">
+										<span class="b-title">История операции</span>
+										<div class="b-finance-history">
+											<div class="b-finance-history__table">
+												<table>
+													<thead>
+														<tr>
+															<td>Тип операции</td>
+															<td>Дата</td>
+															<td>Приход</td>
+															<td>Расход</td>
+															<td>Batch-номер</td>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>
+														<tr>
+															<td><span>ПОПОЛНЕНИЕ</span></td>
+															<td><b>ПОПОЛНЕНИЕ</b></td>
+															<td><span>3 230$</span></td>
+															<td><span>3$</span></td>
+															<td><b>DR 321-32145-42</b></td>
+														</tr>																																																																																																																
+													</tbody>
+												</table>
+											</div>
+											<div class="b-finance-history__right">
+												<span class="b-title">Тип операции</span>
+												<div class="b-finance-history__right__wrap">
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n1" name="n4" />
+										              <label for="n1"><span></span><i>Перевод</i></label>  
+										            </div>
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n2" name="n4" />
+										              <label for="n2"><span></span><i>Пополнение</i></label>  
+										            </div>
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n3" name="n4" />
+										              <label for="n3"><span></span><i>Выплаты</i></label>  
+										            </div>
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n4" name="n4" />
+										              <label for="n4"><span></span><i>Обмен</i></label>  
+										            </div>
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n5" name="n4" />
+										              <label for="n5"><span></span><i>Зачисления по депозиту</i></label>  
+										            </div>
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n6" name="n4" />
+										              <label for="n6"><span></span><i>Зачисления по трейдингу</i></label>  
+										            </div>
+										            <div class="b-checkbox">
+										              <input type="checkbox" checked id="n7" name="n4" />
+										              <label for="n7"><span></span><i>Реферальные начисления</i></label>  
+										            </div> 
+												</div>
+									            <button class="btn-send">Отсортировать</button>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
