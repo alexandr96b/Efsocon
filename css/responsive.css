@@ -76,6 +76,14 @@
 	.b-partners-right .b-video__right{
 		margin: 0 auto 0;
 	}
+	.b-storage-row{
+		flex-wrap: wrap;
+		margin: 0 0 15px 0;
+		border-bottom: 2px solid #264fbf;
+	}
+	.b-storage-item{
+		width: 25%;
+	}
 }	
 
 
@@ -378,6 +386,9 @@
 		margin: 15px 0 0 0;
 		border: none;
 	}
+	.b-storage-item{
+		width: 50%;
+	}	
 }
 @media (max-width: 580px) {
 	.b-main-table table{
