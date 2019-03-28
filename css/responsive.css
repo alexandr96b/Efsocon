@@ -93,6 +93,9 @@
 	.b-my-item__text b{
 		font-size: 13px;
 	}
+	.b-settings-col{
+		width: 260px;
+	}
 }	
 
 
@@ -175,6 +178,15 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+	.b-settings-content{
+		display: block;
+	}
+	.b-settings-col{
+		width: 50%;
+	}
+	.b-settings-left{
+		margin: 0 0 35px 0;
 	}
 }
 
@@ -435,6 +447,39 @@
 	.b-info{
 		padding: 1px 10px 10px 10px;
 	}
+	.b-settings-left__wrap{
+		display: block;
+	}
+	.b-settings-col{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	.b-settings{
+		padding: 10px;
+	}
+	.b-settings-right p{
+		margin: 15px 0;
+	}
+	.b-inputs-wrap{
+		display: block;
+	}
+	.b-inputs-wrap .b-settings-item{
+		margin: 0 0 10px 0;
+	}
+	.b-security-content{
+		display: block;
+	}
+	.b-security-btns{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.btn-on{
+		margin: 0 0 10px 0;
+	}
+	.b-payments-content{
+		display: block;
+	}
 }
 @media (max-width: 580px) {
 	.b-main-table table{
@@ -490,8 +535,14 @@
 	.b-career-block ul li{
 		font-size: 11px;
 	}
+	.b-authorization-block{
+		width: 100%;
+	}
 	.b-career-block ul li b{
 		font-size: 11px;
+	}
+	.b-authorization{
+		padding: 15px;
 	}
 }
 @media (max-width: 445px) {
