@@ -519,6 +519,31 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 } */
+	.b-main-table__wrap{
+		position: relative;
+	}	
+	.b-main-table {
+	    overflow: auto;
+        margin: 0 0 0 72px;
+	}
+	.b-main-table table tbody tr td:first-child{
+		position: absolute;
+		left: 0;
+		padding: 8px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.b-main-table table thead tr td:first-child{
+		position: absolute;
+		left: 0;
+		padding: 4px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		background: #ffffff;
+	}	
+
 }
 @media (max-width: 580px) {
 	.b-main-table table{

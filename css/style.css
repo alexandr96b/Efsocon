@@ -456,7 +456,9 @@ select{
 .b-logo{
 	width: 55px;
 	height: 55px;
-	background: #00c4d1;
+	background: url(../images/logo.png) center no-repeat #00c4d1;
+	background-size: contain;
+	background-size: 45px;
 	display: block;
 	margin: 0 0 50px 0;
 }
@@ -880,9 +882,7 @@ select{
 	font-weight: 300;
 	line-height: 15px;
 }
-.b-main-table table tbody tr td {
 
-}
 .b-main-table table tbody tr td span{
 	font-size: 13px;
 	line-height: 15px;
@@ -1806,6 +1806,16 @@ select{
 	color: #9198a6;
 	cursor: pointer;
 	margin: 0 0 0 5px;
+}
+.btn-c{
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.b-partners-table table tbody tr td .btn-c i{
+	border: none;
+	width: auto;
+	height: auto;
+	color: #264fbf;
 }
 .b-partners-right{
 	flex-shrink: 0;
