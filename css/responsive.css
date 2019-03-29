@@ -1,14 +1,43 @@
 @media (max-width: 1680px) {
 
 }
-@media (max-width: 1410px) {
 
-
+@media (max-width: 1445px) {
+	.b-main-col{
+ 
+		border: none !important;
+		width: auto;
+	}
+	.b-main-item span{
+		letter-spacing: 0;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.b-main__income ul li{
+		font-size: 12px;
+	}
+	.b-main-row{
+		width: auto;
+	}
 }
-@media (max-width: 1365px) {
-
+@media (max-width: 1320px) {
+	.b-main-col{
+		padding: 0;
+	}
+	.b-main-row{
+		flex-grow: 1;
+	}
+	.b-main-right{
+		width: 272px;
+		display: block;
+	}
+	.b-main__income{
+		width: 190px;
+	}
+	.b-main-top__left{
+		width: auto;
+	}
 }
-
 @media (max-width: 1169px) {
 	.wrapper-content{
 		width: 100%;
@@ -253,8 +282,6 @@
 		opacity: 1;
 	}
 	.b-aside-nav__ico{
-		width: 26px;
-		height: auto;
 		padding: 9px 0;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -292,7 +319,7 @@
 	.b-main-block{
 		width: 100%;
 		background-position: center top;
-		background: #ffffff;
+		background: none;
 		justify-content: center;
 	}
 	.b-main-top__left{
@@ -300,7 +327,7 @@
 		width: 100%;
 	}
 	.b-main-row{
-		justify-content: center;
+
 	}
 	.b-main-col{
 		width: 115px;
@@ -480,6 +507,18 @@
 	.b-payments-content{
 		display: block;
 	}
+	.b-logo{
+		margin: 0 0 10px 0;
+	}
+	.b-aside-wrap{
+		height: auto;
+	}
+/* 	.b-aside-nav{
+	padding: 60px 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} */
 }
 @media (max-width: 580px) {
 	.b-main-table table{
