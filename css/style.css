@@ -719,14 +719,17 @@ select{
 	margin: 0;
 }
 .b-main-item__ico{
-	width: 17px;
-	height: 17px;
+	width: 21px;
+	height: 21px;
 	background: #2750bf;
 	border-radius: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 8px 0 0;
+}
+.b-main-item__ico img{
+	width: 11px;
 }
 .b-main-item span{
 	color: #262525;
