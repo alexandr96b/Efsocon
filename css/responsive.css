@@ -217,6 +217,24 @@
 	.b-settings-left{
 		margin: 0 0 35px 0;
 	}
+	.b-messages-left{
+		width: 35%;
+	}
+	.b-messages-item__right{
+		padding: 5px 10px;
+	}
+	.b-messages-item__left b{
+		font-size: 14px;
+		line-height: 16px;
+		margin: 0 0 5px 0;
+	}
+	.b-messages-item__left span{
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.b-messages-item__left{
+		width: 166px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -543,11 +561,40 @@
 		box-sizing: border-box;
 		background: #ffffff;
 	}	
-
+	.b-messages-item{
+		display: block;
+	}
+	.b-messages-item__left{
+		width: auto;
+		margin: 0 0 10px 0;
+	}
+	.b-messages-left{
+		width: 45%;
+		height: 400px;
+	}
+	.b-messages-right{
+		width: 55%;
+		height: 400px;
+	}
+	.b-messages-bottom{
+		margin: 10px 0 0 0;
+	}
 }
 @media (max-width: 580px) {
 	.b-main-table table{
 		width: 570px;
+	}
+}
+@media (max-width: 645px) {
+	.b-messages-content{
+		display: block;
+	}
+	.b-messages-content > div{
+		width: 100%;
+	}
+	.b-messages-left{
+		height: 280px;
+		margin: 0 0 10px 0;
 	}
 }
 @media (max-width: 645px) {
